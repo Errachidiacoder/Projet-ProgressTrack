@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+nav {
+    background-color: #dab5e5; /* Couleur de fond de la barre de navigation */
+    height: 50px; /* Hauteur de la barre de navigation */
+  }
+  
+  ul {
+    list-style-type: none; /* Suppression des puces de liste */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left; /* Mise en page des éléments de la liste en ligne */
+  }
+  
+  a {
+    display: block;
+    color: rgb(54, 53, 53); /* Couleur du texte de lien */
+    text-align: center;
+    padding: 14px 16px; /* Espacement entre le texte du lien et le bord de la barre de navigation */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: #ce47d8; /* Couleur de fond du lien au survol de la souris */
+  }
+
+  nav ul li a {
+    color: #720c86;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4ecf3;
+  }
+  /*centrer le contenu*/
+  .container {
+    margin: 0 auto;
+    max-width: 1050px;
+  }
+  
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+    margin: 0 15px 30px 15px;
+  }
+  
+  
+  .title{
+    text-align: center;
+    padding: 20px;
+  }
+  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    flex-basis: calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    max-width: 600px; /* La largeur maximale souhaitée pour la carte */
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-content h2 {
+    font-size: 20px;
+    margin-bottom:10px;
+    margin-top:10px;
+    color:#340128;
+    text-align: center;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  
+  .btn {
+    width: 23%;
+    height: 25%;
+    margin: 10px auto;
+    background-color: #943d92;
+    color: #f7efef;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #340128;
+    width: fit-content;
+  }
+  /* Media Query */
+@media (max-width: 770px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    margin-top: 20px;
+  }
+
+  .right img {
+    width: 100%;
+    height: auto;
+    position: static; /* Change position to static */
+  }
+
+  .links {
+    position: static; /* Change position to static */
+    top: 0;
+    right: 0;
+    height: auto; /* Change height to auto */
+    background-color: #dab5e5;
+    overflow-y: auto;
+    transform: none; /* Reset transform */
+    transition: none; /* Reset transition */
+  }
+}
